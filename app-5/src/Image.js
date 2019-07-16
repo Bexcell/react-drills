@@ -1,12 +1,13 @@
 import React, {Component} from 'react'
 
 export default class Image extends Component {
-  render() {
+  render(props) {
     return (
+      
+      
       <div>
-        <img src ={this.props.url} alt="" />
-        <caption>Error 599</caption>
+      <img src={this.props.link} alt="cat fight"/>
       </div>
-    )
+    );
   }
 }
