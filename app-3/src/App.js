@@ -15,8 +15,9 @@ class App extends Component {
       }
 
       render () {
-        let foodsToDisplay = this.state.foods
+      let foodsToDisplay = this.state.food
         .filter((element, index) => {
+          console.log(index)
           return element.includes(this.state.filterString);
         })
         .map((element, index) => {
